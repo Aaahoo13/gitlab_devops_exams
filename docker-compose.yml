@@ -27,6 +27,7 @@ services:
             - ./users/.env
         volumes:
           - ./users:/app
+          - ./users/data:/data
 
     orders:
         image: baranbartu/k-orders:latest
