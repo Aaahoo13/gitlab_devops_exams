@@ -3,7 +3,7 @@ import json
 from datastructures import UserInDb, UserUpdateForm
 
 
-users_file = 'fake/users.json'
+users_file = '/data/users.json'
 
 
 def get_all_users(db: str = users_file):
