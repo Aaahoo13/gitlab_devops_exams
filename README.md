@@ -16,14 +16,14 @@
 - gateway : Construite au-dessus de FastAPI, simple passerelle api dont le seul devoir est de rendre propre
    routage tout en gérant l'authentification et l'autorisation
 - utilisateurs (a.k.a admin): conserve les informations de l'utilisateur dans sa propre fausse base de données (système de fichiers).
-   Peut être exécuté de simples opérations CRUD via le service. Il y a aussi un autre
+   Peut exécuter de simples opérations CRUD via le service. Il y a aussi un autre
    point de terminaison pour la connexion, mais le client est extrait de la réponse réelle. Ainsi, le service passerelle
    gérera la réponse de connexion et générera le jeton jwt en conséquence.
 - commandes : Les utilisateurs (abonnés - authentification) peuvent créer et consulter (leurs - autorisations) commandes.
 
 ## Exécuttion
 - check ./gateway/.env => 2 URL de services sont définies sur la base de la conf de douze facteurs
-- docker-composer --build
+- docker-composer up --build
 - visitez l'adresse => http://localhost:8001/docs
 
 # Exemples de requêtes
