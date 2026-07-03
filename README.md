@@ -23,7 +23,7 @@
 
 ## Exécution
 - check ./gateway/.env => 2 URL de services sont définies sur la base de la conf de douze facteurs
-- docker-composer up --build
+- docker compose up --build
 - visitez l'adresse => http://localhost:8001/docs
 
 # Exemples de requêtes
