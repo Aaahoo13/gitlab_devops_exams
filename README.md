@@ -21,7 +21,7 @@
    gérera la réponse de connexion et générera le jeton jwt en conséquence.
 - commandes : Les utilisateurs (abonnés - authentification) peuvent créer et consulter (leurs - autorisations) commandes.
 
-## Exécuttion
+## Exécution
 - check ./gateway/.env => 2 URL de services sont définies sur la base de la conf de douze facteurs
 - docker-composer up --build
 - visitez l'adresse => http://localhost:8001/docs
